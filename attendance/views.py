@@ -54,7 +54,7 @@ class AttendanceViewSet(viewsets.ModelViewSet):
         if date_str:
             try:
                 # Parse the ISOString date to a datetime object
-                date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ")
+                date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.fZ")
                 # Filter the queryset to get all attendance records for the specified date
                 queryset = queryset.filter(datetime__date=date.date())
             except ValueError:
