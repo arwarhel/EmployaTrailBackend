@@ -3,7 +3,7 @@ from .base import *
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'localhost:8000',
-                 'employa-trail-backend-route-ans2sqb-dev.apps.sandbox-m3.1530.p1.openshiftapps.com']
+                 'employatrailbackend-arwa-rhel-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
